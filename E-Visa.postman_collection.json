@@ -1,0 +1,793 @@
+{
+	"info": {
+		"_postman_id": "2c528da4-2c73-4def-9b80-80fb9e169842",
+		"name": "E-Visa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Persons",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/request",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"request"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Persons",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/request",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"request"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "701"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2bd-1G98ndPQ8yTAU7ltLQ0sGtANhhA\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 18 Feb 2021 13:06:01 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"602d3f9fbd7a7d32f0b72e88\",\n        \"name\": \"Bimalesh Seth\",\n        \"mobile\": 7039581571,\n        \"email\": \"sethbimalesh@gmail.com\",\n        \"address\": \"Nalasopara\",\n        \"city\": \"Mumbai\",\n        \"pincode\": 401203,\n        \"passportNo\": \"MA79864\",\n        \"passportIssueCity\": \"Mumbai\",\n        \"passportIssueDate\": \"21/03/2020\",\n        \"passportExpiryDate\": \"21/03/2035\",\n        \"documentDetails\": \"Nothing\",\n        \"pastTourDetails\": \"Nothing\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"602e66150db84f2e84c43f35\",\n        \"name\": \"Bimalesh Seth\",\n        \"mobile\": 7039581571,\n        \"email\": \"sethbimalesh@gmail.com\",\n        \"address\": \"Nalasopara\",\n        \"city\": \"Mumbai\",\n        \"pincode\": 401203,\n        \"passportNo\": \"MA79864\",\n        \"passportIssueCity\": \"Mumbai\",\n        \"passportIssueDate\": \"21/03/2020\",\n        \"passportExpiryDate\": \"21/03/2035\",\n        \"documentDetails\": \"Nothing\",\n        \"pastTourDetails\": \"Nothing\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Create Person",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Bimalesh Seth\",\r\n    \"mobile\": \"7039581571\",\r\n    \"email\": \"sethbimalesh@gmail.com\",\r\n    \"address\": \"Nalasopara\",\r\n    \"city\": \"Mumbai\",\r\n    \"pincode\": \"401203\",\r\n    \"passportNo\": \"MA79864\",\r\n    \"passportIssueCity\": \"Mumbai\",\r\n    \"passportIssueDate\": \"21/03/2020\",\r\n    \"passportExpiryDate\": \"21/03/2035\",\r\n    \"documentDetails\": \"Nothing\",\r\n    \"pastTourDetails\": \"Nothing\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/request",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"request"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create Person",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Bimalesh Seth\",\r\n    \"mobile\": \"7039581571\",\r\n    \"email\": \"sethbimalesh@gmail.com\",\r\n    \"address\": \"Nalasopara\",\r\n    \"city\": \"Mumbai\",\r\n    \"pincode\": \"401203\",\r\n    \"passportNo\": \"MA79864\",\r\n    \"passportIssueCity\": \"Mumbai\",\r\n    \"passportIssueDate\": \"21/03/2020\",\r\n    \"passportExpiryDate\": \"21/03/2035\",\r\n    \"documentDetails\": \"Nothing\",\r\n    \"pastTourDetails\": \"Nothing\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/request",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"request"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "397"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"18d-kdf+7nAkk2/2bXSSzk/vKRNrVLU\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 18 Feb 2021 13:05:25 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Data added successfully.\",\n    \"person\": {\n        \"_id\": \"602e66150db84f2e84c43f35\",\n        \"name\": \"Bimalesh Seth\",\n        \"mobile\": 7039581571,\n        \"email\": \"sethbimalesh@gmail.com\",\n        \"address\": \"Nalasopara\",\n        \"city\": \"Mumbai\",\n        \"pincode\": 401203,\n        \"passportNo\": \"MA79864\",\n        \"passportIssueCity\": \"Mumbai\",\n        \"passportIssueDate\": \"21/03/2020\",\n        \"passportExpiryDate\": \"21/03/2035\",\n        \"documentDetails\": \"Nothing\",\n        \"pastTourDetails\": \"Nothing\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Person",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Vimlesh Soni\",\r\n    \"mobile\": \"7039581571\",\r\n    \"email\": \"sethbimalesh@gmail.com\",\r\n    \"address\": \"Nalasopara\",\r\n    \"city\": \"Mumbai\",\r\n    \"pincode\": \"401203\",\r\n    \"passportNo\": \"MA79864\",\r\n    \"passportIssueCity\": \"Mumbai\",\r\n    \"passportIssueDate\": \"21/03/2020\",\r\n    \"passportExpiryDate\": \"21/03/2035\",\r\n    \"documentDetails\": \"Nothing\",\r\n    \"pastTourDetails\": \"Nothing\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/request/602d3f9fbd7a7d32f0b72e88",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"request",
+						"602d3f9fbd7a7d32f0b72e88"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Person",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Vimlesh Soni\",\r\n    \"mobile\": \"7039581571\",\r\n    \"email\": \"sethbimalesh@gmail.com\",\r\n    \"address\": \"Nalasopara\",\r\n    \"city\": \"Mumbai\",\r\n    \"pincode\": \"401203\",\r\n    \"passportNo\": \"MA79864\",\r\n    \"passportIssueCity\": \"Mumbai\",\r\n    \"passportIssueDate\": \"21/03/2020\",\r\n    \"passportExpiryDate\": \"21/03/2035\",\r\n    \"documentDetails\": \"Nothing\",\r\n    \"pastTourDetails\": \"Nothing\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/request/602d3f9fbd7a7d32f0b72e88",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"request",
+								"602d3f9fbd7a7d32f0b72e88"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "405"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"195-bkRhUJs2lBc6jVwdNcY7hvwDjcc\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 18 Feb 2021 13:06:53 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Data updated successfully.\",\n    \"updatedPerson\": {\n        \"_id\": \"602d3f9fbd7a7d32f0b72e88\",\n        \"name\": \"Vimlesh Soni\",\n        \"mobile\": 7039581571,\n        \"email\": \"sethbimalesh@gmail.com\",\n        \"address\": \"Nalasopara\",\n        \"city\": \"Mumbai\",\n        \"pincode\": 401203,\n        \"passportNo\": \"MA79864\",\n        \"passportIssueCity\": \"Mumbai\",\n        \"passportIssueDate\": \"21/03/2020\",\n        \"passportExpiryDate\": \"21/03/2035\",\n        \"documentDetails\": \"Nothing\",\n        \"pastTourDetails\": \"Nothing\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Person",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/request/602d3e338fbcc60dc892ae0b",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"request",
+						"602d3e338fbcc60dc892ae0b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Visas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/visa",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"visa"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Visas",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/visa",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"visa"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "324"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"144-fEgnz8I8Hbu8mRW4L+NO9Xri8nQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 18 Feb 2021 13:07:13 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"602d412fdc1690349c2e5b80\",\n        \"personId\": \"602d3f9fbd7a7d32f0b72e88\",\n        \"visaIssueDate\": \"15/03/2021\",\n        \"days\": \"10\",\n        \"travelDate\": \"20/03/2021\",\n        \"returnDate\": \"30803/2021\",\n        \"projectName\": \"Nothing\",\n        \"workingPeriod\": \"8 Hours\",\n        \"workingPlace\": \"Texas\",\n        \"jobDescription\": \"Engineer\",\n        \"otherDetails\": \"Nothing\",\n        \"name\": \"Bimalesh Seth\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Create Visa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"personId\": \"602d3f9fbd7a7d32f0b72e88\",\r\n    \"visaIssueDate\": \"15/03/2021\",\r\n    \"days\": \"10\",\r\n    \"travelDate\": \"20/03/2021\",\r\n    \"returnDate\": \"30803/2021\",\r\n    \"projectName\": \"Nothing\",\r\n    \"workingPeriod\": \"8 Hours\",\r\n    \"workingPlace\": \"New York\",\r\n    \"jobDescription\": \"Engineer\",\r\n    \"otherDetails\": \"Nothing\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/visa/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"visa",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create Visa",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"personId\": \"602d3f9fbd7a7d32f0b72e88\",\r\n    \"visaIssueDate\": \"15/03/2021\",\r\n    \"days\": \"10\",\r\n    \"travelDate\": \"20/03/2021\",\r\n    \"returnDate\": \"30803/2021\",\r\n    \"projectName\": \"Nothing\",\r\n    \"workingPeriod\": \"8 Hours\",\r\n    \"workingPlace\": \"New York\",\r\n    \"jobDescription\": \"Engineer\",\r\n    \"otherDetails\": \"Nothing\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/visa/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"visa",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "371"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"173-nhGaLMB1AHZwVM/aVTfq6DOV5I0\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 18 Feb 2021 13:08:24 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Visa issued successfully.\",\n    \"visa\": {\n        \"_id\": \"602e66c830f443172c7ece1d\",\n        \"personId\": \"602d3f9fbd7a7d32f0b72e88\",\n        \"visaIssueDate\": \"15/03/2021\",\n        \"days\": \"10\",\n        \"travelDate\": \"20/03/2021\",\n        \"returnDate\": \"30803/2021\",\n        \"projectName\": \"Nothing\",\n        \"workingPeriod\": \"8 Hours\",\n        \"workingPlace\": \"New York\",\n        \"jobDescription\": \"Engineer\",\n        \"otherDetails\": \"Nothing\",\n        \"name\": \"Vimlesh Soni\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Visa",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"personId\": \"602d3f9fbd7a7d32f0b72e88\",\r\n    \"visaIssueDate\": \"15/03/2021\",\r\n    \"days\": \"20\",\r\n    \"travelDate\": \"20/03/2021\",\r\n    \"returnDate\": \"30803/2021\",\r\n    \"projectName\": \"Nothing\",\r\n    \"workingPeriod\": \"8 Hours\",\r\n    \"workingPlace\": \"Tokyo\",\r\n    \"jobDescription\": \"Engineer\",\r\n    \"otherDetails\": \"Nothing\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/visa/602e66c830f443172c7ece1d",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"visa",
+						"602e66c830f443172c7ece1d"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Visa",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"personId\": \"602d3f9fbd7a7d32f0b72e88\",\r\n    \"visaIssueDate\": \"15/03/2021\",\r\n    \"days\": \"20\",\r\n    \"travelDate\": \"20/03/2021\",\r\n    \"returnDate\": \"30803/2021\",\r\n    \"projectName\": \"Nothing\",\r\n    \"workingPeriod\": \"8 Hours\",\r\n    \"workingPlace\": \"Tokyo\",\r\n    \"jobDescription\": \"Engineer\",\r\n    \"otherDetails\": \"Nothing\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/visa/602e66c830f443172c7ece1d",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"visa",
+								"602e66c830f443172c7ece1d"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "376"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"178-1alSImAlPP7XL+CGt2pVsgJMeB0\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 18 Feb 2021 13:09:25 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Visa updated successfully.\",\n    \"updatedVisa\": {\n        \"_id\": \"602e66c830f443172c7ece1d\",\n        \"personId\": \"602d3f9fbd7a7d32f0b72e88\",\n        \"visaIssueDate\": \"15/03/2021\",\n        \"days\": \"20\",\n        \"travelDate\": \"20/03/2021\",\n        \"returnDate\": \"30803/2021\",\n        \"projectName\": \"Nothing\",\n        \"workingPeriod\": \"8 Hours\",\n        \"workingPlace\": \"Tokyo\",\n        \"jobDescription\": \"Engineer\",\n        \"otherDetails\": \"Nothing\",\n        \"name\": \"Vimlesh Soni\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/visa/602e6270712a8d32a0ddc44b",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"visa",
+						"602e6270712a8d32a0ddc44b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Single Person",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/request/602d3f9fbd7a7d32f0b72e88",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"request",
+						"602d3f9fbd7a7d32f0b72e88"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Single Person",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/request/602d3f9fbd7a7d32f0b72e88",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"request",
+								"602d3f9fbd7a7d32f0b72e88"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "398"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"18e-HZd6mDKg+JVxhq5l4Qs2spN2jcM\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 18 Feb 2021 13:10:02 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Person found successfully!\",\n    \"person\": {\n        \"_id\": \"602d3f9fbd7a7d32f0b72e88\",\n        \"name\": \"Vimlesh Soni\",\n        \"mobile\": 7039581571,\n        \"email\": \"sethbimalesh@gmail.com\",\n        \"address\": \"Nalasopara\",\n        \"city\": \"Mumbai\",\n        \"pincode\": 401203,\n        \"passportNo\": \"MA79864\",\n        \"passportIssueCity\": \"Mumbai\",\n        \"passportIssueDate\": \"21/03/2020\",\n        \"passportExpiryDate\": \"21/03/2035\",\n        \"documentDetails\": \"Nothing\",\n        \"pastTourDetails\": \"Nothing\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Single Visa",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/visa/602e66c830f443172c7ece1d",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"visa",
+						"602e66c830f443172c7ece1d"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Single Visa",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/visa/602e66c830f443172c7ece1d",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"visa",
+								"602e66c830f443172c7ece1d"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "367"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"16f-+9yysdw5TRQ1nlF9marXi884gkw\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 18 Feb 2021 13:09:42 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Visa found successfully!\",\n    \"visa\": {\n        \"_id\": \"602e66c830f443172c7ece1d\",\n        \"personId\": \"602d3f9fbd7a7d32f0b72e88\",\n        \"visaIssueDate\": \"15/03/2021\",\n        \"days\": \"20\",\n        \"travelDate\": \"20/03/2021\",\n        \"returnDate\": \"30803/2021\",\n        \"projectName\": \"Nothing\",\n        \"workingPeriod\": \"8 Hours\",\n        \"workingPlace\": \"Tokyo\",\n        \"jobDescription\": \"Engineer\",\n        \"otherDetails\": \"Nothing\",\n        \"name\": \"Vimlesh Soni\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get All Visas of a Person",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/person/visa/602d3f9fbd7a7d32f0b72e88",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"person",
+						"visa",
+						"602d3f9fbd7a7d32f0b72e88"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get All Visas of a Person",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/person/visa/602d3f9fbd7a7d32f0b72e88",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"person",
+								"visa",
+								"602d3f9fbd7a7d32f0b72e88"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "694"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2b6-AmvQgXWsnGc5QQBufFcxLl1NT6E\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 18 Feb 2021 13:10:14 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Visas found successfully!\",\n    \"visas\": [\n        {\n            \"_id\": \"602d412fdc1690349c2e5b80\",\n            \"personId\": \"602d3f9fbd7a7d32f0b72e88\",\n            \"visaIssueDate\": \"15/03/2021\",\n            \"days\": \"10\",\n            \"travelDate\": \"20/03/2021\",\n            \"returnDate\": \"30803/2021\",\n            \"projectName\": \"Nothing\",\n            \"workingPeriod\": \"8 Hours\",\n            \"workingPlace\": \"Texas\",\n            \"jobDescription\": \"Engineer\",\n            \"otherDetails\": \"Nothing\",\n            \"name\": \"Bimalesh Seth\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"602e66c830f443172c7ece1d\",\n            \"personId\": \"602d3f9fbd7a7d32f0b72e88\",\n            \"visaIssueDate\": \"15/03/2021\",\n            \"days\": \"20\",\n            \"travelDate\": \"20/03/2021\",\n            \"returnDate\": \"30803/2021\",\n            \"projectName\": \"Nothing\",\n            \"workingPeriod\": \"8 Hours\",\n            \"workingPlace\": \"Tokyo\",\n            \"jobDescription\": \"Engineer\",\n            \"otherDetails\": \"Nothing\",\n            \"name\": \"Vimlesh Soni\",\n            \"__v\": 0\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}
